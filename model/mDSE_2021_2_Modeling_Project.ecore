@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mDSE_2021_2_Modeling_Project" nsURI="http://www.example.org/mDSE_2021_2_Modeling_Project"
+    nsPrefix="mDSE_2021_2_Modeling_Project">
+  <eClassifiers xsi:type="ecore:EClass" name="Usuario">
+    <eOperations name="autenticar" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject">
+      <eParameters name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eParameters name="senha" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    </eOperations>
+    <eOperations name="validarDadosNaReceita" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"/>
+    <eOperations name="realizarDeposito">
+      <eParameters name="meta" eType="#//Meta"/>
+      <eParameters name="titulo" eType="#//Titulo"/>
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+      <eParameters name="tipoDeposito" eType="#//TipoDeposito"/>
+    </eOperations>
+    <eOperations name="retirarValorTed">
+      <eParameters name="meta" eType="#//Meta"/>
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+      <eParameters name="contaRetirada" eType="#//ContaBancaria"/>
+    </eOperations>
+    <eOperations name="retirarValorPix">
+      <eParameters name="meta" eType="#//Meta"/>
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+      <eParameters name="chavePix" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cpf" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomeMae" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataNascimento" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="senha" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="telefone" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endereco" eType="#//Endereco"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="meta" upperBound="-1" eType="#//Meta"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="carteira" lowerBound="1"
+        eType="#//Carteira"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contabancaria" upperBound="-1"
+        eType="#//ContaBancaria"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Endereco">
+    <eOperations name="validaCep" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+    <eOperations name="buscaDadosCep"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cep" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="logradouro" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numero" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ShortObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="complemento" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cidade" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uf" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Meta">
+    <eOperations name="obterEstimativaEmMesesParaConclusao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//LongObject"/>
+    <eOperations name="obterValorMedioDepositado" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eOperations name="depositarValor">
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    </eOperations>
+    <eOperations name="retirarValor">
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    </eOperations>
+    <eOperations name="obterPercentualDeConclusao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataCriacao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorDepositado" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transacao" upperBound="-1"
+        eType="#//Transacao"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Carteira">
+    <eOperations name="realizarRetirada">
+      <eParameters name="titulo" eType="#//Titulo"/>
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    </eOperations>
+    <eOperations name="realizarDeposito">
+      <eParameters name="titulo" eType="#//Titulo"/>
+      <eParameters name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transacao" upperBound="-1"
+        eType="#//Transacao"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="titulo" upperBound="-1"
+        eType="#//Titulo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="salvamentoautomatico" eType="#//SalvamentoAutomatico"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transacao">
+    <eOperations name="transacaoDeDeposito" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataHoraTransacao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DateTime"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SalvamentoAutomatico">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cartaodecredito" lowerBound="1"
+        eType="#//CartaoDeCredito"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CartaoDeCredito">
+    <eOperations name="validar" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"/>
+    <eOperations name="obterBandeira" eType="#//BandeiraCartao"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numero" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataExpiracao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cvv" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomeImpresso" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Titulo">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rentabilidade" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="liquidez" eType="#//LiquidezInvestimento"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vencimento" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorAplicado" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataPrimeiraAplicacao"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContaBancaria">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigoBanco" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="agencia" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conta" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoDeposito">
+    <eLiterals name="PIX"/>
+    <eLiterals name="TED" value="1"/>
+    <eLiterals name="BOLETO" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BandeiraCartao"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="LiquidezInvestimento">
+    <eLiterals name="DIARIA"/>
+    <eLiterals name="VENCIMENTO" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PeriodicidadeSalvamentoAutomatico">
+    <eLiterals name="SEMANAL"/>
+    <eLiterals name="MENSAL" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

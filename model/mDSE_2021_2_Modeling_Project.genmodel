@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/MDSE_2021_2_Modeling_Project/src-gen" creationIcons="false"
+    editDirectory="/MDSE_2021_2_Modeling_Project.edit/src-gen" editorDirectory="/MDSE_2021_2_Modeling_Project.editor/src-gen"
+    modelPluginID="MDSE_2021_2_Modeling_Project" modelName="MDSE_2021_2_Modeling_Project"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>mDSE_2021_2_Modeling_Project.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="MDSE_2021_2_Modeling_Project" disposableProviderFactory="true"
+      ecorePackage="mDSE_2021_2_Modeling_Project.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mDSE_2021_2_Modeling_Project.ecore#//TipoDeposito">
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//TipoDeposito/PIX"/>
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//TipoDeposito/TED"/>
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//TipoDeposito/BOLETO"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mDSE_2021_2_Modeling_Project.ecore#//BandeiraCartao"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mDSE_2021_2_Modeling_Project.ecore#//LiquidezInvestimento">
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//LiquidezInvestimento/DIARIA"/>
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//LiquidezInvestimento/VENCIMENTO"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mDSE_2021_2_Modeling_Project.ecore#//PeriodicidadeSalvamentoAutomatico">
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//PeriodicidadeSalvamentoAutomatico/SEMANAL"/>
+      <genEnumLiterals ecoreEnumLiteral="mDSE_2021_2_Modeling_Project.ecore#//PeriodicidadeSalvamentoAutomatico/MENSAL"/>
+    </genEnums>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Usuario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/cpf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/nomeMae"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/dataNascimento"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/senha"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Usuario/telefone"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Usuario/endereco"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Usuario/meta"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Usuario/carteira"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Usuario/contabancaria"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Usuario/autenticar">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/autenticar/email"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/autenticar/senha"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Usuario/validarDadosNaReceita"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Usuario/realizarDeposito">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/realizarDeposito/meta"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/realizarDeposito/titulo"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/realizarDeposito/valor"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/realizarDeposito/tipoDeposito"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorTed">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorTed/meta"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorTed/valor"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorTed/contaRetirada"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorPix">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorPix/meta"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorPix/valor"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Usuario/retirarValorPix/chavePix"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Endereco">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/cep"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/logradouro"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/numero"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/complemento"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/cidade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Endereco/uf"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Endereco/validaCep"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Endereco/buscaDadosCep"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Meta">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Meta/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Meta/valorTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Meta/dataCriacao"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Meta/valorDepositado"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Meta/transacao"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Meta/obterEstimativaEmMesesParaConclusao"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Meta/obterValorMedioDepositado"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Meta/depositarValor">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Meta/depositarValor/valor"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Meta/retirarValor">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Meta/retirarValor/valor"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Meta/obterPercentualDeConclusao"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Carteira">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/transacao"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/titulo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/salvamentoautomatico"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Carteira/valorTotal"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarRetirada">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarRetirada/titulo"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarRetirada/valor"/>
+      </genOperations>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarDeposito">
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarDeposito/titulo"/>
+        <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarDeposito/valor"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Transacao">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Transacao/valor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Transacao/dataHoraTransacao"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Transacao/transacaoDeDeposito"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//SalvamentoAutomatico">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//SalvamentoAutomatico/cartaodecredito"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/numero"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/dataExpiracao"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/cvv"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/nomeImpresso"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/validar"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/obterBandeira"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Titulo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/rentabilidade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/liquidez"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/vencimento"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/valorAplicado"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Titulo/dataPrimeiraAplicacao"/>
+    </genClasses>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//ContaBancaria">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//ContaBancaria/codigoBanco"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//ContaBancaria/agencia"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//ContaBancaria/conta"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

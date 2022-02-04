@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: MDSE_2021_2_Modeling_Project;singleton:=true
+Automatic-Module-Name: MDSE_2021_2_Modeling_Project
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: mDSE_2021_2_Modeling_Project,
+ mDSE_2021_2_Modeling_Project.impl,
+ mDSE_2021_2_Modeling_Project.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
