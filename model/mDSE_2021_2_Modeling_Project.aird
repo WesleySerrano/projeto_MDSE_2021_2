@@ -7,7 +7,7 @@
     <semanticResources>../plugin.properties</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_0Dg20IUiEey6gs_gqez_cg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0FS_gIUiEey6gs_gqez_cg" name="mDSE_2021_2_Modeling_Project" repPath="#_0EegIIUiEey6gs_gqez_cg" changeId="27cbc564-cc19-40bd-8d6f-5fe31d4b6bac">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0FS_gIUiEey6gs_gqez_cg" name="mDSE_2021_2_Modeling_Project" repPath="#_0EegIIUiEey6gs_gqez_cg" changeId="7255ea79-3fb5-4e17-ac99-f6e6a0fa0529">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="mDSE_2021_2_Modeling_Project.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -522,6 +522,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YtmpRoVcEey6gs_gqez_cg" id="(0.50390625,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YtmpR4VcEey6gs_gqez_cg" id="(0.5059523809523809,1.0)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_3-CwQIgjEeyyWpJ__LK22A" type="4001" element="_39putogjEeyyWpJ__LK22A" source="_r_WpwIU7Eey6gs_gqez_cg" target="_h6M-sIU7Eey6gs_gqez_cg">
+          <children xmi:type="notation:Node" xmi:id="_3-FzkIgjEeyyWpJ__LK22A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-FzkYgjEeyyWpJ__LK22A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3-FzkogjEeyyWpJ__LK22A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-Fzk4gjEeyyWpJ__LK22A" x="128" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3-GaoIgjEeyyWpJ__LK22A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-GaoYgjEeyyWpJ__LK22A" x="15" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3-CwQYgjEeyyWpJ__LK22A" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3-CwQogjEeyyWpJ__LK22A" fontColor="7490599" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3-CwQ4gjEeyyWpJ__LK22A" points="[104, 6, 828, -39]$[104, 45, 828, 0]$[-724, 45, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-HowIgjEeyyWpJ__LK22A" id="(0.0,0.9627329192546584)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-HowYgjEeyyWpJ__LK22A" id="(1.0,0.9585492227979274)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0IBjYIUiEey6gs_gqez_cg" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -732,7 +748,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_h6J7YIU7Eey6gs_gqez_cg" name="Meta" tooltipText="" outgoingEdges="_2loeeIVbEey6gs_gqez_cg" incomingEdges="_jSObYIVYEey6gs_gqez_cg" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_h6J7YIU7Eey6gs_gqez_cg" name="Meta" tooltipText="" outgoingEdges="_2loeeIVbEey6gs_gqez_cg" incomingEdges="_jSObYIVYEey6gs_gqez_cg _39putogjEeyyWpJ__LK22A" width="12" height="10">
       <target xmi:type="ecore:EClass" href="mDSE_2021_2_Modeling_Project.ecore#//Meta"/>
       <semanticElements xmi:type="ecore:EClass" href="mDSE_2021_2_Modeling_Project.ecore#//Meta"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -891,7 +907,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_r_PVAIU7Eey6gs_gqez_cg" name="DepositoAutomatico" tooltipText="" outgoingEdges="_8SUw5oVaEey6gs_gqez_cg" incomingEdges="_QKWrRoVbEey6gs_gqez_cg" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_r_PVAIU7Eey6gs_gqez_cg" name="DepositoAutomatico" tooltipText="" outgoingEdges="_8SUw5oVaEey6gs_gqez_cg _39putogjEeyyWpJ__LK22A" incomingEdges="_QKWrRoVbEey6gs_gqez_cg" width="12" height="10">
       <target xmi:type="ecore:EClass" href="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico"/>
       <semanticElements xmi:type="ecore:EClass" href="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1306,6 +1322,20 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_39putogjEeyyWpJ__LK22A" name="[0..1] meta" sourceNode="_r_PVAIU7Eey6gs_gqez_cg" targetNode="_h6J7YIU7Eey6gs_gqez_cg">
+      <target xmi:type="ecore:EReference" href="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/meta"/>
+      <semanticElements xmi:type="ecore:EReference" href="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/meta"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_39qVwIgjEeyyWpJ__LK22A" routingStyle="manhattan" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_39qVwogjEeyyWpJ__LK22A" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_39qVwYgjEeyyWpJ__LK22A" showIcon="false" labelColor="39,76,114">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_0FIncIUiEey6gs_gqez_cg"/>

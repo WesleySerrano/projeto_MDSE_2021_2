@@ -109,6 +109,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/periodicidade"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/valor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/proximoDeposito"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/meta"/>
       <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/realizarDeposito"/>
     </genClasses>
     <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito">
