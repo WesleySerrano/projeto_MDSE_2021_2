@@ -79,7 +79,7 @@
         eType="#//Transacao"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="titulo" upperBound="-1"
         eType="#//Titulo"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="salvamentoautomatico" eType="#//SalvamentoAutomatico"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="depositoautomatico" eType="#//DepositoAutomatico"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Transacao">
@@ -87,9 +87,13 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataHoraTransacao" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DateTime"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SalvamentoAutomatico">
+  <eClassifiers xsi:type="ecore:EClass" name="DepositoAutomatico">
+    <eOperations name="realizarDeposito"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cartaodecredito" lowerBound="1"
         eType="#//CartaoDeCredito"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="periodicidade" eType="#//PeriodicidadeSalvamentoAutomatico"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="proximoDeposito" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CartaoDeCredito">
     <eOperations name="validar" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"/>

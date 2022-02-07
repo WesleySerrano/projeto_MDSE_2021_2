@@ -88,7 +88,7 @@
     <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//Carteira">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/transacao"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/titulo"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/salvamentoautomatico"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//Carteira/depositoautomatico"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Carteira/valorTotal"/>
       <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarRetirada">
         <genParameters ecoreParameter="mDSE_2021_2_Modeling_Project.ecore#//Carteira/realizarRetirada/titulo"/>
@@ -104,8 +104,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//Transacao/dataHoraTransacao"/>
       <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//Transacao/transacaoDeDeposito"/>
     </genClasses>
-    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//SalvamentoAutomatico">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//SalvamentoAutomatico/cartaodecredito"/>
+    <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/cartaodecredito"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/periodicidade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/valor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/proximoDeposito"/>
+      <genOperations ecoreOperation="mDSE_2021_2_Modeling_Project.ecore#//DepositoAutomatico/realizarDeposito"/>
     </genClasses>
     <genClasses ecoreClass="mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mDSE_2021_2_Modeling_Project.ecore#//CartaoDeCredito/numero"/>
